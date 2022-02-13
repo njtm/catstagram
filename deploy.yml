@@ -1,5 +1,5 @@
----
-version: "1.0"
+version: "2.0"
+
 services:
   web:
     image: xnct/catstagram:1.0
@@ -10,6 +10,7 @@ services:
           - catstagram.nijatoes.com
         to:
           - global: true
+
 profiles:
   compute:
     web:
@@ -25,7 +26,8 @@ profiles:
       pricing:
         web:
           denom: uakt
-          amount: 100
+          amount: 500
+
 deployment:
   web:
     dcloud:
